@@ -21,8 +21,6 @@ DESCRIPTION
   s.require_path = 'lib'
   s.files = Dir.glob('{bin,lib,config}/**/*') + %w(README.md CHANGELOG.md CONTRIBUTORS Gemfile activegraph.gemspec)
   s.executables = []
-  s.extra_rdoc_files = %w( README.md )
-  s.rdoc_options = ['--quiet', '--title', 'Neo4j.rb', '--line-numbers', '--main', 'README.rdoc', '--inline-source']
   s.metadata = {
     'homepage_uri' => 'http://neo4jrb.io/',
     'changelog_uri' => 'https://github.com/neo4jrb/activegraph/blob/master/CHANGELOG.md',
@@ -39,7 +37,6 @@ DESCRIPTION
   s.add_development_dependency('guard')
   s.add_development_dependency('guard-rspec')
   s.add_development_dependency('guard-rubocop')
-  s.add_development_dependency('neo4j-rake_tasks', source:  'https://github.com/vishvish/neo4j-rake_tasks')
   s.add_development_dependency('os')
   s.add_development_dependency('pry')
   s.add_development_dependency('railties', '>= 4.0')

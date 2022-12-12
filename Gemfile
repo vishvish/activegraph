@@ -1,4 +1,4 @@
-source 'http://rubygems.org'
+source 'https://rubygems.org'
 
 gemspec
 
@@ -8,6 +8,7 @@ gem 'listen', '< 3.1'
 
 active_model_version = ENV['ACTIVE_MODEL_VERSION']
 gem 'activemodel', "~> #{active_model_version}" if active_model_version&.length&.positive?
+gem 'neo4j-rake_tasks', github: 'vishvish/neo4j-rake_tasks', branch: 'master'
 
 group 'test' do
   gem 'coveralls', require: false
